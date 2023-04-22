@@ -14,7 +14,7 @@ app.set("port", 3306);
 const db = mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"y5867360",
+    password:process.env.password,
     database:"PloggingDB",
 });
 
